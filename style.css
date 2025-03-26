@@ -46,6 +46,18 @@ h1 {
     color: #615151;
 }
 
+.hero-inferior{
+    display: flex;
+    justify-content: flex-end;  
+    background: rgba(0, 0, 0, 0.9);
+   
+}
+
+.sobre-mi{
+    height: 30px;
+}
+
+
 
 /* Adaptable(Responsivo) */
 
