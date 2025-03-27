@@ -25,7 +25,7 @@ h1 {
 
 /* Seccion Hero */
 .hero {
-    background-color: #f5f6f7;
+    background-color: #EFEFEF;
     min-height: 450px;
     text-align: center;
 }
@@ -47,16 +47,36 @@ h1 {
 }
 
 .hero-inferior{
-    display: flex;
-    justify-content: flex-end;  
-    background: rgba(0, 0, 0, 0.9);
+    display: flex;  
+    background: #A3D1C6;
+/*     gap: 80px; */
    
+}
+
+.texto {
+    background: #EFEFEF;
+    width: 25%;
+}
+
+.hero-inferior-imagen {
+    width: 200px;
+    height: 25%;   
+    background: #615151;
 }
 
 .sobre-mi{
     height: 30px;
 }
 
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+    margin-top: 1rem;
+    margin-bottom: 1rem;    
+    gap: 15px;
+    row-gap: 15px; 
+}
 
 
 /* Adaptable(Responsivo) */
