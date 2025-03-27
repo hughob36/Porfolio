@@ -46,27 +46,39 @@ h1 {
     color: #615151;
 }
 
+
+/* sobre mi */
 .hero-inferior{
-    display: flex;  
-    background: #A3D1C6;
-/*     gap: 80px; */
+    display: flex;     
+    gap: 80px;
+    background: #EFEFEF;  
    
 }
 
 .texto {
-    background: #EFEFEF;
-    width: 25%;
+    background: #EFEFEF;   
 }
 
-.hero-inferior-imagen {
-    width: 200px;
-    height: 25%;   
-    background: #615151;
+.imagen {   
+    width: 45%;
 }
 
-.sobre-mi{
+@media (max-width: 1139px) {
+    .hero-inferior{
+        flex-direction: column;  
+        align-items: center;
+        gap: 0;       
+    }
+    .imagen{
+        width: auto;
+    }
+}
+
+
+
+/* .sobre-mi{
     height: 30px;
-}
+} */
 
 .proyectos {
     display: flex;
