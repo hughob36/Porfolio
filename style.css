@@ -50,17 +50,21 @@ h1 {
 /* sobre mi */
 .hero-inferior{
     display: flex;     
-    gap: 80px;
+    gap: 100px;
     background: #EFEFEF;  
+    justify-content:flex-end;
    
 }
 
 .texto {
-    background: #EFEFEF;   
+    background: #EFEFEF;
+    margin-top: 40px ; 
+    width: 50%;  
 }
 
-.imagen {   
-    width: 45%;
+.hero-inferior-imagen {
+    max-width: 500px;  /* Ajusta según el tamaño deseado */
+    height: auto; /* Mantiene la proporción */    
 }
 
 @media (max-width: 1139px) {
@@ -71,6 +75,10 @@ h1 {
     }
     .imagen{
         width: auto;
+    }
+    .texto{
+        width: auto;
+        margin: 20px;
     }
 }
 
@@ -106,9 +114,9 @@ h1 {
     }    
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
     .hero-inferior-imagen {
-        width: 600px;
+        width: auto;
     }    
 }
 
