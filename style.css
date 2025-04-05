@@ -63,6 +63,10 @@ h1 {
     width: 50%;  
 }
 
+.curriculum-boton {
+    margin-left: 2rem;
+}
+
 .hero-inferior-imagen {
     max-width: 500px;  /* Ajusta según el tamaño deseado */
     height: auto; /* Mantiene la proporción */    
