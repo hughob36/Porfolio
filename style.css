@@ -106,6 +106,12 @@ h1 {
 .stack2 {
     display: flex;
     gap: 30px;
+    margin: 2rem 0 0 0;
+}
+
+.stack3 {
+    display: flex;
+    gap: 30px;
     margin: 2rem 0 2rem 0;
 }
 
