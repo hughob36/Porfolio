@@ -99,15 +99,10 @@ h1 {
 
 /* 1. Centrar el CONTENIDO DENTRO de cada tarjeta */
 .icon{    
-    display: flex; 
-    /* Cambia la dirección a columna para que el icono esté arriba y el texto abajo */
-    flex-direction: column; 
-    /* Centra los elementos (imagen y párrafo) horizontalmente */
-    align-items: center; 
-    
-    /* Asegura que la tarjeta no tenga margen por defecto si es de Bootstrap */
-    margin: 0; 
-    /* Mantén el ancho y el borde si es necesario (el tuyo está a 3rem) */
+    display: flex;    
+    flex-direction: column;     
+    align-items: center;  
+    margin: 0;   
     width: 3rem; 
     border: none;
     transition: all 0.3s ease;
@@ -115,18 +110,15 @@ h1 {
 
 /* 2. Centrar el TEXTO DENTRO de la etiqueta <p> */
 .icon p {
-    /* Centra el texto horizontalmente */
-    text-align: center; 
-    /* Ajusta o elimina los márgenes para que no haya espacio extra */
-    margin-top: 5px; /* Pequeño espacio entre el icono y el texto */
-    margin-bottom: 0;
-    /* Ajusta el tamaño de la fuente si es necesario */
-    font-size: 0.8rem;
-    /* Asegura que la palabra no se rompa si hay poco espacio */
+    
+    text-align: center;     
+    margin-top: 5px; 
+    margin-bottom: 0;   
+    font-size: 0.8rem;   
     white-space: nowrap; 
 }
 
-/* Opcional: Efecto al pasar el ratón */
+/* Efecto al pasar el ratón */
 .icon:hover {
     transform: scale(1.1); /* Hace que el icono crezca un 10% */    
 }
