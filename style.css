@@ -97,6 +97,16 @@ h1 {
     row-gap: 15px; 
 }
 
+.card{
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+
 /* 1. Centrar el CONTENIDO DENTRO de cada tarjeta */
 .icon{    
     display: flex;    
