@@ -21,3 +21,18 @@ img.addEventListener("mouseout", () => {
     setTimeout(() => img.src = "imagenes/foto1.png", 450); // Vuelve a la imagen original
     setTimeout(() => img.style.opacity = "1", 500); // Se muestra suavemente
 });
+
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const htmlElement = document.documentElement; // Selecciona la etiqueta <html>
+
+themeToggle.addEventListener('click', () => {
+    // Alternar entre temas
+    if (htmlElement.getAttribute('data-bs-theme') === 'dark') {
+        htmlElement.setAttribute('data-bs-theme', 'light');
+        themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill'); // Cambia a luna
+    } else {
+        htmlElement.setAttribute('data-bs-theme', 'dark');
+        themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill'); // Cambia a sol
+    }
+});
