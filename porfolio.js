@@ -18,7 +18,7 @@ img.addEventListener("mouseover", () => {
 
 img.addEventListener("mouseout", () => {
     img.style.opacity = "0"; // Se desvanece
-    setTimeout(() => img.src = "imagenes/foto1.png", 450); // Vuelve a la imagen original
+    setTimeout(() => img.src = "imagenes/fotoPerfilUpateco.png", 450); // Vuelve a la imagen original
     setTimeout(() => img.style.opacity = "1", 500); // Se muestra suavemente
 });
 
