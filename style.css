@@ -76,55 +76,37 @@ h1 {
     height: auto; /* Mantiene la proporción */    
 }
 
-@media (max-width: 1139px) {
-    .hero-inferior{
-        flex-direction: column;  
-        align-items: center;
-        gap: 0;       
-    }
-    .imagen{
-        width: auto;
-    }
-    .texto{
-        width: auto;
-        margin: 20px;                
-    }
-}
-
 .proyectos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;   
     margin-top: 2rem;
     margin-bottom: 2rem;    
-    gap: 15px;
-    row-gap: 15px; 
+    gap: 30px;
+    row-gap: 20px; 
 }
 
 .card{
-    transition: all 0.3s ease;
+    position: relative;    
+    transition: transform 0.3s ease;
 }
 
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05); 
+    z-index: 100;           /*flotar sobre cualquier otra card */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /*sombra para que se note que "flota" */  
 }
 
 
 
 /* 1. Centrar el CONTENIDO DENTRO de cada tarjeta */
 .icon{    
-    display: flex;    
-    flex-direction: column;     
-    align-items: center;  
-    margin: 0;   
-    width: 3rem; 
-    border: none;
-    transition: all 0.3s ease;
+    position: relative;    
+    transition: transform 0.3s ease
 }
 
 /* 2. Centrar el TEXTO DENTRO de la etiqueta <p> */
-.icon p {
-    
+.icon p {    
     text-align: center;     
     margin-top: 5px; 
     margin-bottom: 0;   
@@ -134,7 +116,8 @@ h1 {
 
 /* Efecto al pasar el ratón */
 .icon:hover {
-    transform: scale(1.1); /* Hace que el icono crezca un 10% */    
+    transform: scale(1.2); /* Hace que el icono crezca un 10% */    
+    z-index: 10;
 }
 
 .icon img {
@@ -142,25 +125,15 @@ h1 {
     height: auto;
 }
 
-
-
-.stack {
+/* Contenedores de iconos */
+.stack, .stack2, .stack3 {
     display: flex;
-    gap: 30px;
-    margin-top: 2rem;
+    flex-wrap: wrap;       /*bajen si no caben */
+    justify-content: center; /* Centra los iconos en móvil */
+    gap: 35px;             /* Espacio suficiente para que el 1.1 del scale no choque */
+    margin: 2rem 0;
 }
 
-.stack2 {
-    display: flex;
-    gap: 30px;
-    margin: 2rem 0 0 0;
-}
-
-.stack3 {
-    display: flex;
-    gap: 30px;
-    margin: 2rem 0 2rem 0;
-}
 
 /* Colores cuando el atributo data-bs-theme="dark" esté activo */
 [data-bs-theme="dark"] {
@@ -186,7 +159,7 @@ h1 {
     background-color: #1a1d20 !important;
 }
 
-/* Sobrescribir el fondo de la sección Sobre mí y su contenedor de texto */
+/* Sobrescribir el fondo de la sección Sobre mi y su contenedor de texto */
 [data-bs-theme="dark"] .hero-inferior,
 [data-bs-theme="dark"] .texto {
     background-color: #212529 !important;
@@ -212,8 +185,22 @@ h1 {
 
 
 
-
 /* Adaptable(Responsivo) */
+@media (max-width: 1139px) {
+    .hero-inferior{
+        flex-direction: column;  
+        align-items: center;
+        gap: 0;       
+    }
+    .imagen{
+        width: auto;
+    }
+    .texto{
+        width: auto;
+        margin: 20px;                
+    }    
+}
+
 @media screen and (max-width: 767px){
     .navbar-brand {
         display: none;        
@@ -236,4 +223,17 @@ h1 {
     .stack2 {
         flex-wrap: wrap;
     }    
+}
+
+@media (max-width: 480px) {
+    .stack, .stack2, .stack3 {
+        gap: 25px; /* Ajuste fino para móviles pequeños */
+    }
+    .card {
+        width: 100% !important; /* En celus muy chicos, mejor que la card ocupe casi todo el ancho */
+        max-width: 300px;
+    }
+    .icon:hover, .card:hover {
+        transform: scale(1.03); /* Casi nada de crecimiento para evitar desbordes */
+    }
 }
