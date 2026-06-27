@@ -58,7 +58,7 @@ h1 {
     gap: 100px;
     background: #EFEFEF;  
     justify-content:flex-end;
-   
+    padding-bottom: 10px;   
 }
 
 .texto {
