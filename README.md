@@ -1,10 +1,8 @@
 # 🚀 Portafolio de Desarrollo Backend & Fullstack
 
-
 Soy Hugo Orlando Benitez, un **Desarrollador Backend Java | Spring Boot | REST APIs | Spring Security | Microservicios | JUnit & Mockito | SQL** con una sólida formación académica y práctica en el ciclo completo de desarrollo de software.
 
 Este repositorio es la puerta de entrada a mis proyectos más relevantes, demostrando mis habilidades en la construcción de APIs robustas, seguras y documentadas, junto con experiencia en tecnologías Frontend.
-
 
 ---
 
